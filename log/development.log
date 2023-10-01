@@ -78,3 +78,60 @@ FOREIGN KEY ("ingredient_id")
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (5.0ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Nick"], ["lname", "Foti"], ["email", "nickfoti@hotmail.com"], ["password_digest", "[FILTERED]"], ["is_admin", 1], ["status", "Active"], ["created_at", "2023-10-01 12:39:35.128278"], ["updated_at", "2023-10-01 12:39:35.128278"]]
+  [1m[36mTRANSACTION (22.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "James"], ["lname", "Jameson"], ["email", "james221@gmail.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:40:59.897924"], ["updated_at", "2023-10-01 12:40:59.897924"]]
+  [1m[36mTRANSACTION (18.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "James"], ["lname", "Jameson"], ["email", "james221@gmail.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:42:14.288153"], ["updated_at", "2023-10-01 12:42:14.288153"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "John"], ["lname", "Smith"], ["email", "jsmith@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:42:47.730263"], ["updated_at", "2023-10-01 12:42:47.730263"]]
+  [1m[36mTRANSACTION (18.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "John"], ["lname", "Doe"], ["email", "johndoe@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:43:13.724891"], ["updated_at", "2023-10-01 12:43:13.724891"]]
+  [1m[36mTRANSACTION (16.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Jane"], ["lname", "Doe"], ["email", "janedoe@gmail.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Suspended"], ["created_at", "2023-10-01 12:45:08.889017"], ["updated_at", "2023-10-01 12:45:08.889017"]]
+  [1m[36mTRANSACTION (21.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Bob"], ["lname", "Smith"], ["email", "bobsmith@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:47:05.852778"], ["updated_at", "2023-10-01 12:47:05.852778"]]
+  [1m[36mTRANSACTION (22.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Alice"], ["lname", "Johnson"], ["email", "alicejohnson@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:47:26.979742"], ["updated_at", "2023-10-01 12:47:26.979742"]]
+  [1m[36mTRANSACTION (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Sarah"], ["lname", "Lee"], ["email", "sarahlee@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:47:38.631984"], ["updated_at", "2023-10-01 12:47:38.631984"]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "David"], ["lname", "Brown"], ["email", "davidbrown@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:47:48.435489"], ["updated_at", "2023-10-01 12:47:48.435489"]]
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Emily"], ["lname", "Wilson"], ["email", "emilywilson@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Suspended"], ["created_at", "2023-10-01 12:47:57.080812"], ["updated_at", "2023-10-01 12:47:57.080812"]]
+  [1m[36mTRANSACTION (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Oliver"], ["lname", "Taylor"], ["email", "olivertaylor@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:48:04.995318"], ["updated_at", "2023-10-01 12:48:04.995318"]]
+  [1m[36mTRANSACTION (24.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Grace"], ["lname", "Anderson"], ["email", "graceanderson@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:48:15.353035"], ["updated_at", "2023-10-01 12:48:15.353035"]]
+  [1m[36mTRANSACTION (26.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Lucas"], ["lname", "Scott"], ["email", "lucasscott@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Banned"], ["created_at", "2023-10-01 12:48:24.248604"], ["updated_at", "2023-10-01 12:48:24.248604"]]
+  [1m[36mTRANSACTION (23.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("fname", "lname", "email", "password_digest", "is_admin", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fname", "Larry"], ["lname", "Bird"], ["email", "lbird@email.com"], ["password_digest", "[FILTERED]"], ["is_admin", 0], ["status", "Active"], ["created_at", "2023-10-01 12:48:32.173470"], ["updated_at", "2023-10-01 12:48:32.173470"]]
+  [1m[36mTRANSACTION (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = ? LIMIT ?[0m  [["status", "Banned"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = ?[0m  [["status", "Suspended"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = ? LIMIT ?[0m  [["status", "Suspended"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = ? LIMIT ?[0m  [["status", "Suspended"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" = ?[0m  [["status", "Suspended"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."status" != ?[0m  [["status", "Active"]]
+  [1m[36mUser Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = ?[0m  [["status", "Active"]]
+  [1m[36mUser Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."status" = ?[0m  [["status", "Suspended"]]
+  [1m[36mUser Pluck (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users" WHERE "users"."status" = ?[0m  [["status", "Suspended"]]
