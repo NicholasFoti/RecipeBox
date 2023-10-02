@@ -1948,3 +1948,25 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4851)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:39:05 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.7ms | Allocations: 2347)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2451)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2877)
+Completed 200 OK in 28ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 6579)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:43:35 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.3ms | Allocations: 2800)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3108)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4004)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 4837)
+
+
