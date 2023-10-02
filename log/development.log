@@ -863,3 +863,499 @@ FOREIGN KEY ("ingredient_id")
   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4], ["id", 5], ["id", 6], ["id", 8], ["id", 7], ["id", 9], ["id", 10], ["id", 11], ["id", 12], ["id", 13], ["id", 14], ["id", 26], ["id", 25], ["id", 27], ["id", 28], ["id", 29], ["id", 30], ["id", 31], ["id", 32], ["id", 33], ["id", 34], ["id", 39], ["id", 19], ["id", 35], ["id", 36], ["id", 15], ["id", 16], ["id", 23], ["id", 20], ["id", 38], ["id", 24], ["id", 40], ["id", 41], ["id", 18], ["id", 43], ["id", 44]]
   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
   [1m[36mRecipeIngredient Load (0.3ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients"[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipeIngredient Load (0.5ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["recipe_id", 1], ["recipe_id", 2], ["recipe_id", 3], ["recipe_id", 6], ["recipe_id", 7], ["recipe_id", 8], ["recipe_id", 9], ["recipe_id", 10], ["recipe_id", 11]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4], ["id", 5], ["id", 6], ["id", 8], ["id", 7], ["id", 9], ["id", 10], ["id", 11], ["id", 12], ["id", 13], ["id", 14], ["id", 26], ["id", 25], ["id", 27], ["id", 28], ["id", 29], ["id", 30], ["id", 31], ["id", 32], ["id", 33], ["id", 34], ["id", 39], ["id", 19], ["id", 35], ["id", 36], ["id", 15], ["id", 16], ["id", 23], ["id", 20], ["id", 38], ["id", 24], ["id", 40], ["id", 41], ["id", 18], ["id", 43], ["id", 44]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 1], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 5], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 8], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 7], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 10], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 8], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 7], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 12], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 13], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 14], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 26], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 28], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 29], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 30], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 31], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 32], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 33], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 34], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 39], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 35], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 36], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 15], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 16], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 23], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 20], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 38], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 39], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 40], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 41], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 1], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 18], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 43], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 16], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 44], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 26], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 28], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 29], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 30], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 1], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 5], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 8], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 7], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 10], ["recipe_id", 1], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 8], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 7], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 12], ["recipe_id", 2], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 13], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 14], ["recipe_id", 3], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 26], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 28], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 29], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 30], ["recipe_id", 6], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 31], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 32], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 33], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 34], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 39], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 35], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 36], ["recipe_id", 7], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 15], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 16], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 23], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 20], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 38], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 39], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 40], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 41], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 1], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 18], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 43], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 16], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 44], ["recipe_id", 10], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 26], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 25], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 28], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 6], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 29], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 30], ["recipe_id", 11], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mRecipeIngredient Load (0.3ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."recipe_id" IN (?, ?)[0m  [["recipe_id", 8], ["recipe_id", 9]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 15], ["id", 9], ["id", 16], ["id", 4], ["id", 11], ["id", 23], ["id", 20], ["id", 38], ["id", 39], ["id", 24], ["id", 40], ["id", 2], ["id", 27], ["id", 19], ["id", 41], ["id", 3], ["id", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 15], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 16], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 4], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 11], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 23], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 20], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 38], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 39], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 40], ["recipe_id", 8], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 2], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 27], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 19], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 24], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 41], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 3], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 1], ["recipe_id", 9], ["LIMIT", 1]]
+  [1m[36mRecipeIngredient Load (0.1ms)[0m  [1m[34mSELECT "recipe_ingredients".* FROM "recipe_ingredients" WHERE "recipe_ingredients"."ingredient_id" = ? AND "recipe_ingredients"."recipe_id" = ? LIMIT ?[0m  [["ingredient_id", 9], ["recipe_id", 9], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:25:19 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 295)
+  Rendered layouts/_header.html.erb (Duration: 9.2ms | Allocations: 2428)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 3596)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms | Allocations: 7500)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000ba18>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:26:09 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 2.2ms | Allocations: 1295)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 1970)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 2759)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000bdb0>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:26:11 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 1074)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1395)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1632)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000c0d0>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:06 +0800
+  
+NoMethodError (undefined method `about' for #<ActionDispatch::Routing::Mapper:0x00007f49822f6ea8 @set=#<ActionDispatch::Routing::RouteSet:0x00007f4988e4b910>, @draw_paths=[#<Pathname:/home/student/Documents/rorapps/recipebox/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f49891d3b78 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00007f4988366068 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:11:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:08 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 1403)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 1899)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000e380>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:10 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 1074)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1395)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1630)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000e678>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:12 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1393)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000e948>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:43 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1393)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000ec40>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:30:46 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 1393)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x0000000000ef10>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About Us", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:31:24 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 827)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1766)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:33:24 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 915)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 1725)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:33:48 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 891)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1702)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:34:09 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 2.7ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 924)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 1735)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:34:56 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 985)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 1796)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:34:58 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 16.7ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 474)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 731)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:35:00 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 474)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 730)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:35:02 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 476)
+Completed 200 OK in 22ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 734)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:35:02 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 462)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 719)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:36:17 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 108)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1023)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1837)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:36:18 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 480)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 738)
+
+
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:38:21 +0800
+  
+NoMethodError (undefined method `about' for #<ActionDispatch::Routing::Mapper:0x00007f49823c00a0 @set=#<ActionDispatch::Routing::RouteSet:0x00007f4988e4b910>, @draw_paths=[#<Pathname:/home/student/Documents/rorapps/recipebox/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f49883dedd8 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00007f4988366068 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:11:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-10-02 14:38:34 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 105)
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2020)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2847)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_path' for #<ActionView::Base:0x00000000016328>):
+    14:         <li><a class="nav-link" href="#">Search</a></li>
+    15:         </li>
+    16:         <li class="nav-item">
+    17:         <%= link_to "About", about_path, class:"nav-link" %>
+    18:         </li>
+    19:         <li class="nav-item">
+    20:         <li><a class="nav-link" href="#">Sign Up</a></li>
+  
+app/views/layouts/_header.html.erb:17
+app/views/layouts/application.html.erb:18
