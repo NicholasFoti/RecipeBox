@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #get 'about/index'
+  #get 'sign/index'
   resources :ingredients
   resources :recipes
   resources :users
@@ -8,5 +10,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'home#index'
-  about 'home#about'
+  get '/about', to: 'about#index'
 end
