@@ -1702,3 +1702,249 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 832)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:21:25 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.8ms | Allocations: 2303)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2605)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3500)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4333)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:22:00 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.7ms | Allocations: 2474)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2776)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3671)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4502)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:22:49 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 2490)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2792)
+  Rendered layouts/_header.html.erb (Duration: 14.7ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 3687)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 4518)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:23:21 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.4ms | Allocations: 2474)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2776)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3671)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4502)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:24:16 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 2509)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2811)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3706)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4537)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:29:33 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 2547)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2849)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3744)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4579)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:30:21 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 23.2ms | Allocations: 10912)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 11214)
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 12109)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 12940)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:32:41 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 23.0ms | Allocations: 9842)
+  Rendered users/new.html.erb within layouts/application (Duration: 30.5ms | Allocations: 10111)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 10200)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms | Allocations: 11031)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group" style="padding-bottom: 10px;">
+    <!--<%= form.label :fname, style: "display: block" %> -->
+    <%= form.text_field :fname, placeholder: 'First Name', class: 'form-control' %>
+  </div>
+
+  <div class="form-group" style="padding-bottom: 10px;">
+   <!-- <%= form.label :lname, style: "display: block" %> -->
+    <%= form.text_field :lname, placeholder: 'Last Name', class:'form-control' %>
+  </div>
+
+  <div class="form-group" style="padding-bottom: 10px;">
+  <!-- <%= form.label :email, style: "display: block" %> -->
+    <%= form.text_field :email, placeholder: 'Email', class:'form-control' %>
+  </div>
+
+  <div class="form-group" style="padding-bottom: 10px;">
+    <!-- <%= form.label :password_digest, style: "display: block" %> -->
+    <%= form.text_field :password_digest, placeholder: 'Password', class:'form-control' %>
+  </div>
+
+  <div>
+  <!-- 
+    <%= form.label :is_admin, style: "display: block" %>
+    <%= form.check_box :is_admin %> -->
+    <%= form.hidden_field :is_admin, value: false %>
+  </div>
+
+  <div>
+  <!-- 
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %> -->
+    <%= form.hidden_field :status, value: "Active" %>
+  </div>
+
+  <div>
+    <!-- <%= form.submit %> -->
+    <%= form.submit 'Submit'. class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: user) do |form| %>
+2:      <% if user.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% user.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:    
+14:      <div class="form-group" style="padding-bottom: 10px;">
+15:        <!--<%= form.label :fname, style: "display: block" %> -->
+16:        <%= form.text_field :fname, placeholder: 'First Name', class: 'form-control' %>
+17:      </div>
+18:    
+19:      <div class="form-group" style="padding-bottom: 10px;">
+20:       <!-- <%= form.label :lname, style: "display: block" %> -->
+21:        <%= form.text_field :lname, placeholder: 'Last Name', class:'form-control' %>
+22:      </div>
+23:    
+24:      <div class="form-group" style="padding-bottom: 10px;">
+25:      <!-- <%= form.label :email, style: "display: block" %> -->
+26:        <%= form.text_field :email, placeholder: 'Email', class:'form-control' %>
+27:      </div>
+28:    
+29:      <div class="form-group" style="padding-bottom: 10px;">
+30:        <!-- <%= form.label :password_digest, style: "display: block" %> -->
+31:        <%= form.text_field :password_digest, placeholder: 'Password', class:'form-control' %>
+32:      </div>
+33:    
+34:      <div>
+35:      <!-- 
+36:        <%= form.label :is_admin, style: "display: block" %>
+37:        <%= form.check_box :is_admin %> -->
+38:        <%= form.hidden_field :is_admin, value: false %>
+39:      </div>
+40:    
+41:      <div>
+42:      <!-- 
+43:        <%= form.label :status, style: "display: block" %>
+44:        <%= form.text_field :status %> -->
+45:        <%= form.hidden_field :status, value: "Active" %>
+46:      </div>
+47:    
+48:      <div>
+49:        <!-- <%= form.submit %> -->
+50:        <%= form.submit 'Submit'. class: 'btn btn-primary' %>
+51:      </div>
+52:    <% end %>
+  
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/_form.html.erb:50: syntax error, unexpected ':'
+app/views/users/new.html.erb:3
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:33:18 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 2828)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3130)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4025)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 4856)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:33:38 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.8ms | Allocations: 2798)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3100)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3995)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4825)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:34:02 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.0ms | Allocations: 2809)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3111)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4006)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 4836)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-10-02 21:34:10 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 2824)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3126)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 404)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4021)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4851)
+
+
